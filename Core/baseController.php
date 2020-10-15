@@ -19,7 +19,6 @@ abstract class BaseController{
 
 
     public function render(string $viewName):void{
-        //print_r($this->templateData);
         extract($this->templateData);
 
         require(self::$VIEWS_FOLDER.$viewName.".php");

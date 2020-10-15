@@ -14,7 +14,7 @@
            $name = $_POST['name'];
            $password = md5($_POST['password']);
 
-           if(!insertUser($email,$name,$password)){
+           if(insertUser($email,$name,$password) === false){
                $this->templateData['feedBack']= 'You already have an account';
                $this->templateData['color'] = 'text-danger';
            } else {

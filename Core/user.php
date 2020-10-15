@@ -13,7 +13,6 @@ class User{
         if (isset($_SESSION['userID'])) {
             $this->id = $_SESSION['userID'];
             $this->name = $_SESSION['username'];
-            $this->isAdmin=$_SESSION['isAdmin'];
         }
     }
 
@@ -29,13 +28,6 @@ class User{
             header("Location: ../shop/login.php");
             exit();
     }
-    public function checkIfLoggedInAsAdmin():void{
-
-        if (!isset($this->id)||!($this->isAdmin)) {
-            header("Location: ../shop/login.php");
-            exit();
-        }
-    }
 
     public function getID():int{
         return $this->id;
@@ -48,7 +40,7 @@ class User{
     public function getAllUserInfo(){
         if ($this->isLoggedIn()){
             $connection=getConnection();
-            $query="SELECT * FROM users WHERE id= :id";
+            $query="SELECT * FROM user WHERE id= :id";
             $statement=$connection->prepare($query);
             $data=["id"=>$this->id];
             $statement->execute($data);
@@ -62,7 +54,7 @@ class User{
 
     public function login(string $email, string $password):void{
         $connection=getConnection();
-        $query="SELECT * FROM users WHERE email=:email AND password=:password AND deleted=0";
+        $query="SELECT * FROM user WHERE email=:email AND password=:password AND deleted=0";
         $statement=$connection->prepare($query);
         $data=["email"=>$email, "password"=>md5($password)];
         $statement->execute($data);
@@ -73,17 +65,10 @@ class User{
             $_SESSION['userID']=$this->id;
             $this->name=$resultset["name"];
             $_SESSION['username']=$this->name;
-            $this->isAdmin=($resultset["isadmin"]==0)?FALSE:TRUE;
-
-            $_SESSION['isAdmin']=$this->isAdmin;
-            if ($this->isAdmin)
-                header("Location: ../admin/dashboard.php");
-            else
-                header("Location: ../shop/products.php");
+            header("Location: ../basic/home.php");
         } else
-            header("Location: ../shop/login.php");
+            header("Location: ../basic/login.php");
 
-        exit();
 
     }
 
@@ -91,11 +76,11 @@ class User{
         if (isset($this->id)){
             unset($this->id);
             unset($this->name);
-            unset($this->isAdmin);
+
 
             unset($_SESSION["userID"]);
             unset($_SESSION["username"]);
-            unset($_SESSION["isAdmin"]);
+
 
         }
 

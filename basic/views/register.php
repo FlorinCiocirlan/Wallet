@@ -5,33 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+    <script src="../../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <title>Register</title>
 </head>
 <body>
-<div>
-<form action="../app/register.php" method="post">
-    <div>
+<div class="container">
+<form class="w-25 ml-auto mr-auto" action="../basic/register.php" method="post">
+    <div class="form-group">
     <label for="email">Email Adress</label>
-    <input type="text" name="email" id="email" required>
+    <input class="form-control" type="text" name="email" id="email" required>
     </div>
-    <div>
+    <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name" required>
+    <input class="form-control" type="text" name="name" id="name" required>
     </div>
-    <div>
+    <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
+    <input class="form-control" type="password" name="password" id="password" required>
     </div>
-    <div>
+    <div class="form-group">
     <label for="confirmPassword">Confirmation Password</label>
-    <input type="password" name="confirmPassword" id="confirmPassword" required>
+    <input class="form-control" type="password" name="confirmPassword" id="confirmPassword" required>
     </div>
-    <button class="btn btn-success" type="submit">Sign Up</button>
+    <button class="btn btn-sm btn-success" type="submit">Sign Up</button>
 </form>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
