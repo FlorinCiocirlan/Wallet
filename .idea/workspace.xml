@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a47884d-e026-42cb-8a05-7e38474b7e48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Core/baseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/baseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,9 +33,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -47,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602680671710</updated>
       <workItem from="1602680672821" duration="1326000" />
-      <workItem from="1602683557616" duration="2826000" />
+      <workItem from="1602683557616" duration="21258000" />
     </task>
     <servers />
   </component>
@@ -55,9 +64,41 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="523" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1602758920361">
+    <state x="320" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602765839495">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="523" y="125" key="#com.intellij.ide.util.MemberChooser/0.23.1440.826@0.23.1440.826" timestamp="1602758920361" />
+    <state x="320" y="101" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1602765839495" />
+    <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602766566447">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1602766566447" />
+    <state x="523" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1602776918174">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="523" y="125" key="#com.intellij.ide.util.MemberChooser/0.23.1440.826@0.23.1440.826" timestamp="1602776918174" />
+    <state width="958" height="214" key="GridCell.Tab.0.bottom" timestamp="1602775278696">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="958" height="214" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1602775278696" />
+    <state width="958" height="214" key="GridCell.Tab.0.center" timestamp="1602775278695">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="958" height="214" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1602775278695" />
+    <state width="958" height="214" key="GridCell.Tab.0.left" timestamp="1602775278694">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="958" height="214" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1602775278694" />
+    <state width="958" height="214" key="GridCell.Tab.0.right" timestamp="1602775278695">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="958" height="214" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1602775278695" />
+    <state x="539" y="366" key="NewPhpFileDialog" timestamp="1602776885504">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="539" y="366" key="NewPhpFileDialog/0.23.1440.826@0.23.1440.826" timestamp="1602776885504" />
+    <state x="565" y="146" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602765877845">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="565" y="146" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.826@0.23.1440.826" timestamp="1602765877845" />
   </component>
 </project>

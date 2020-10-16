@@ -65,7 +65,7 @@ class User{
             $_SESSION['userID']=$this->id;
             $this->name=$resultset["name"];
             $_SESSION['username']=$this->name;
-            header("Location: ../basic/home.php");
+            header("Location: ../basic/dashboard.php");
         } else
             header("Location: ../basic/login.php");
 
@@ -84,7 +84,7 @@ class User{
 
         }
 
-        header("Location: ../shop/login.php");
+        header("Location: ../basic/login.php");
         exit();
 
     }

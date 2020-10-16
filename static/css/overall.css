@@ -1,0 +1,19 @@
+#button {
+    background-color: transparent;
+    border: 1px solid #1F89F2;
+    color : #1F89F2;
+}
+
+#button:hover{
+    background-color: #1F89F2;
+    color : white;
+ }
+
+#walletText {
+    color : #071829;
+}
+
+#buttonAdd {
+background-color: #1F89F2;
+color:white
+}

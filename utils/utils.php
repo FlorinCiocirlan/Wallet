@@ -30,3 +30,28 @@
         $stmt->execute([':email'=>$email,':name'=>$name,':password'=>$password]);
 
     }
+
+    function getUserWallets(int $userID) : ?array{
+        $pdo = getConnection();
+        $query = "SELECT * FROM wallet WHERE user_id=:userID AND deleted=0";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([':userID'=>$userID]);
+        return $stmt->fetchAll();
+    }
+
+    function getWalletById(int $walletID) {
+        $pdo = getConnection();
+        $query = "SELECT * FROM wallet WHERE id=:walletID AND deleted=0";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([':walletID'=>$walletID]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function addWallet(string $name , string $currency, int $userID){
+        $pdo = getConnection();
+        $query = "INSERT INTO wallet(name , currency , balance , user_id, deleted)
+    VALUES(:name, :currency , 0 , :user_id, 0)
+";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([':name'=>$name , ':currency'=>$currency, ':user_id'=>$userID]);
+    }
